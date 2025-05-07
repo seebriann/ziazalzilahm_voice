@@ -1,0 +1,68 @@
+
+body {
+  background: url("images/zia9.jpg") center center / cover no-repeat;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Kontainer transparan */
+.container {
+  background-color: rgba(255, 240, 245, 0.85); /* Pink lembut semi-transparan */
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px #ff99cc;
+  opacity: 80%;
+}
+
+#cd-image {
+  width: 200px;
+  height: 200px;
+  background-image: url("images/cd.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  opacity: 90%;
+}
+
+.spin {
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#play-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#play-btn:hover {
+  background-color: #e7549d;
+}
+
+#song-title {
+  font-size: 1.5rem;
+  color: #a0526d;
+  margin: 10px 0 20px;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+}
+
